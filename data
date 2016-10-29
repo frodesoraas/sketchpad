@@ -1,0 +1,121 @@
+Last login: Sat Oct 29 22:29:14 on ttys000
+Frodes-MacBook-Air:~ frodesoraas$ ls
+AT.postflight.10540			Jottacloud
+AT.postflight.10655			Library
+Applications				Movies
+Creative Cloud Files			Music
+Creative Cloud Files (archived) (1)	OneDrive
+Creative Cloud Files (unknown)		Pictures
+Desktop					Public
+Documents				github
+Dosprog					python
+Downloads				railsbridge
+Dropbox					the_odin_project
+Frodes-MacBook-Air:~ frodesoraas$ cd the_odin_project
+Frodes-MacBook-Air:the_odin_project frodesoraas$ cd sketchpad
+Frodes-MacBook-Air:sketchpad frodesoraas$ ls
+README.md	css		index.html	js
+Frodes-MacBook-Air:sketchpad frodesoraas$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   .DS_Store
+	new file:   css/sketchpad.css
+	new file:   index.html
+	new file:   js/sketchpad.js
+
+Frodes-MacBook-Air:sketchpad frodesoraas$ git commit .m "comment"
+error: pathspec '.m' did not match any file(s) known to git.
+error: pathspec 'comment' did not match any file(s) known to git.
+Frodes-MacBook-Air:sketchpad frodesoraas$ git commit -.m "comment"
+error: unknown switch `.'
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
+Frodes-MacBook-Air:sketchpad frodesoraas$ -a
+-bash: -a: command not found
+Frodes-MacBook-Air:sketchpad frodesoraas$ git commit -a "comments"
+fatal: Paths with -a does not make sense.
+Frodes-MacBook-Air:sketchpad frodesoraas$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   .DS_Store
+	new file:   css/sketchpad.css
+	new file:   index.html
+	new file:   js/sketchpad.js
+
+Frodes-MacBook-Air:sketchpad frodesoraas$ git commit "melding"
+error: pathspec 'melding' did not match any file(s) known to git.
+Frodes-MacBook-Air:sketchpad frodesoraas$ git commit
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#       new file:   .DS_Store
+#       new file:   css/sketchpad.css
+#       new file:   index.html
+#       new file:   js/sketchpad.js
+#
+'Her er siste filene i prosjektet"
+
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+-- INSERT --
